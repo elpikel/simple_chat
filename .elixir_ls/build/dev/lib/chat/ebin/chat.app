@@ -1,0 +1,9 @@
+{application,chat,
+             [{registered,[]},
+              {description,"chat"},
+              {vsn,"0.1.0"},
+              {modules,['Elixir.Chat','Elixir.Chat.Message',
+                        'Elixir.Chat.Participant','Elixir.Chat.Room',
+                        'Elixir.Chat.RoomsSupervisor']},
+              {applications,[kernel,stdlib,elixir]},
+              {extra_applications,[logger]}]}.
