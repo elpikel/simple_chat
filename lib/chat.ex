@@ -1,6 +1,7 @@
 defmodule Chat do
   def simulate do
-    Chat.RoomsSupervisor.start_link()
+    Chat.ChatSupervisor.start_link()
+
     Chat.RoomsSupervisor.create_room(:test2)
     Chat.Participant.start(:u1)
     Chat.Participant.start(:u2)

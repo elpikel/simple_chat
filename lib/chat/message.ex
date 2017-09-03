@@ -1,4 +1,4 @@
 defmodule Chat.Message do
-  @enforce_keys [:text, :from, :to]
-  defstruct [:text, :from, :to]
+  @enforce_keys [:text, :from]
+  defstruct [:text, :from]
 end
